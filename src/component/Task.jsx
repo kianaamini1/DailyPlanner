@@ -1,8 +1,7 @@
-
 import React from 'react';
+import '../App.css';
 
-
-function Task({ task, toggleTask, deleteTask, index }) {
+function Task({ task, toggleTask, deleteTask }) {
   return (
     <div className="task-container">
       <input 
@@ -12,7 +11,7 @@ function Task({ task, toggleTask, deleteTask, index }) {
         className="task-checkbox"
       />
       <span className={`task-text ${task.completed ? 'completed' : ''}`}>
-        {index + 1} 
+        {task.text}
       </span>
       <button className="remove-button" onClick={() => deleteTask(task.id)}>
         Remove

@@ -123,3 +123,33 @@ p {
 .remove-button:hover {
   background-color: darkred;
 }
+
+.filter-buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.filter-btn {
+  border: 1px solid #363636;
+  padding: 8px 16px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  transition: background-color 0.2s ease;/
+}
+
+
+
+.filter-btn:hover {
+  background-color: #d2d0d0;
+  border-color:  black;
+}
+
+.filter-btn.active {
+  background-color: #333;
+  color: white;
+}
